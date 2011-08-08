@@ -25,8 +25,7 @@ set wildmode=longest:full
 set number
 
 set background=dark
-colorscheme ir_black
-
+colorscheme herald
 set hlsearch
 
 set wrapscan
@@ -56,10 +55,28 @@ set splitbelow
 
 
 "" Mappings
+" turn off hlsearch and wrapping shortcuts
 nmap <silent> <Leader>n :set invhls<cr>:set hls?<cr>
+nmap <silent> <Leader>w :set invwrap<CR>:set wrap?<CR>
+
+" edit and manually source vimrc file
 nmap <silent> <Leader>ev :e $MYVIMRC<cr>
 nmap <silent> <Leader>sv :so $MYVIMRC<cr>
-" if has("autocmd")
-" 	autocmd bufwritepost vimrc source $MYVIMRC
-" 	autocmd bufwritepost .vimrc source $MYVIMRC
-" endif
+
+" autoreload vimrc file when saved
+" vimrc is for directly editing the file .vimrc is symlinked to
+if has("autocmd")
+	autocmd! bufwritepost vimrc source $MYVIMRC
+	autocmd! bufwritepost .vimrc source $MYVIMRC
+endif
+
+" quicker escape in insert mode
+imap ii <Esc>
+
+" invert k and j to move by display line instead of actual line
+" useful when line wrapping is enabled
+" enable the inverse for moving between actual lines
+nnoremap k gk
+nnoremap j gj
+nnoremap gk k
+nnoremap gj j
