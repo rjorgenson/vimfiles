@@ -25,7 +25,7 @@ set wildmode=longest:full
 set number
 
 set background=dark
-colorscheme herald
+colorscheme tomorrow.night
 set hlsearch
 
 set wrapscan
