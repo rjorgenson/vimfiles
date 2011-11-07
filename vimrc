@@ -1,10 +1,11 @@
 "" Settings
 
-"" Enable pathogen
-runtime bundle/pathogen/autoload/pathogen.vim
-
 set nocompatible                        " turn off compatibility with vi
 
+"" Enable pathogen autoloading of plugins in
+"" ~/.vim/bundles directory
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
 
 set tabstop=4
 set shiftwidth=4
