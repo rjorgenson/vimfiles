@@ -33,6 +33,7 @@ set number
 
 set background=dark
 colorscheme herald
+set t_Co=256
 set hlsearch
 
 set wrapscan
