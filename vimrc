@@ -11,6 +11,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+"" Enable matchit plugin
+runtime macros/matchit.vim
+
 filetype plugin indent on               " recognize filetypes and tab accordingly
 syntax on
 
@@ -41,13 +44,14 @@ set nowrap
 set scrolloff=4
 set textwidth=0
 
-set history=100
+set history=1000
 set ch=2
 set backspace=2
 
 set nobackup
 set nowritebackup
-set dir=$HOME/.vim/tmp
+set directory=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupdir=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 set vb
 
@@ -57,6 +61,9 @@ set listchars=eol:·,tab:»·,precedes:<,extends:>
 set splitright
 set splitbelow
 
+set title
+
+set ruler
 
 "" Mappings
 " turn off hlsearch and wrapping shortcuts
@@ -73,6 +80,10 @@ if has("autocmd")
 	autocmd! bufwritepost vimrc source $MYVIMRC
 	autocmd! bufwritepost .vimrc source $MYVIMRC
 endif
+
+" remap buffer scroll to scroll 3 lines instead of 1
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
 
 " quicker escape in insert mode
 imap ii <Esc>
