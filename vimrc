@@ -1,5 +1,8 @@
 "" Settings
 
+"" Enable pathogen
+runtime bundle/pathogen/autoload/pathogen.vim
+
 set nocompatible                        " turn off compatibility with vi
 
 
@@ -25,7 +28,7 @@ set wildmode=longest:full
 set number
 
 set background=dark
-colorscheme tomorrow.night
+colorscheme herald
 set hlsearch
 
 set wrapscan
