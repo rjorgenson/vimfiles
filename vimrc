@@ -32,7 +32,7 @@ set wildmode=longest:full
 set number
 
 set background=dark
-colorscheme herald
+colorscheme zenburn
 set t_Co=256
 set hlsearch
 
