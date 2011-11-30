@@ -16,6 +16,12 @@ populate the git submodules contained (plugins)
 
 and configure any plugins that require configuration
 
+#### Optional
+
+Create a localized tmp directory for storing backup, swap, and undo files. This directory will be ignored by git.
+
+    mkdir ~/.vim/tmp
+
 ## Plugins
 
 Pathogen is already setup by default with this config once you update the git submodules. If you wish to setup any plugins not included the easiest way to do so is to add the git repo for the plugin as a submodule within this git repo
