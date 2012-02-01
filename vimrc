@@ -58,8 +58,8 @@ set backspace=2
 set nobackup
 set nowritebackup
 set undofile
-set directory=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set backupdir=~/.vim/tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim/tmp//,~/.tmp//,~/tmp//,/var/tmp//,/tmp//
+set backupdir=~/.vim/tmp//,~/.tmp//,~/tmp//,/var/tmp//,/tmp//
 
 set vb
 
