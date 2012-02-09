@@ -1,6 +1,7 @@
 "" Settings
 
 set nocompatible                        " turn off compatibility with vi
+filetype off
 
 " Initialize Vundle
 set rtp+=~/.vim/bundle/vundle/
