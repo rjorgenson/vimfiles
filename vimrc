@@ -2,10 +2,19 @@
 
 set nocompatible                        " turn off compatibility with vi
 
-"" Enable pathogen autoloading of plugins in
-"" ~/.vim/bundles directory
-runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect()
+" Initialize Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" Github Bundle Repos
+"
+Bundle 'davidoc/taskpaper.vim'
+Bundle 'wincent/Command-T'
+Bundle 'xolox/vim-notes'
 
 set tabstop=4
 set shiftwidth=4
