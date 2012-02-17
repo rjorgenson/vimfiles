@@ -10,6 +10,7 @@ call vundle#rc()
 " let Vundle manage Vundle
 " required! 
 Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/vim-powerline'
 
 " Github Bundle Repos
 "
@@ -79,9 +80,17 @@ set listchars=eol:¬,tab:▸\ ,precedes:«,extends:»
 set splitright
 set splitbelow
 
+set laststatus=2
+
 set title
 
 set ruler
+
+""" Plugin configuration
+
+"" vim-powerline
+let g:Powerline_symbols = 'fancy'
+
 
 "" Mappings
 " save a keystroke
