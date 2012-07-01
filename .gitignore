@@ -1,6 +1,4 @@
 tmp/
 *.un~
-bundle/Command-T
-bundle/taskpaper.vim
-bundle/vim-powerline
-bundle/vim-notes
+bundle/*
+!bundle/vundle
