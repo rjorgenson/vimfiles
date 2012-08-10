@@ -120,6 +120,11 @@ if has("autocmd")
     autocmd! bufwritepost .vimrc source $MYVIMRC
 endif
 
+" enable spell check for commit messages
+if has("autocmd")
+    autocmd FileType gitcommit setlocal spell
+endif
+
 " remap buffer scroll to scroll 3 lines instead of 1
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
