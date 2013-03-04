@@ -11,6 +11,7 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'tpope/vim-pastie'
 
 " Github Bundle Repos
 "
