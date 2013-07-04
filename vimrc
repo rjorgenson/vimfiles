@@ -17,7 +17,7 @@ Bundle 'tpope/vim-pastie'
 "
 Bundle 'davidoc/taskpaper.vim'
 Bundle 'wincent/Command-T'
-Bundle 'xolox/vim-notes'
+"Bundle 'xolox/vim-notes'
 
 set tabstop=4
 set shiftwidth=4
