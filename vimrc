@@ -24,6 +24,9 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+" MacVim settigns
+set guifont=Anonymous\ Pro\ for\ Powerline:h11
+
 "" Enable matchit plugin
 runtime macros/matchit.vim
 
@@ -94,6 +97,9 @@ let g:Powerline_symbols = 'fancy'
 
 
 "" Mappings
+" save files requiring root permissions
+cmap w!! %!sudo tee > /dev/null %
+
 " save a keystroke
 nnoremap ; :
 
