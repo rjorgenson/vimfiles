@@ -26,6 +26,10 @@ Create a localized tmp directory for storing backup, swap, and undo files. This 
 
 Plugins are handles by Vundle. This plugin is installed with the initial git submodules init && git submodules update. After that all plugins can be installed by updating the .vimrc file. Vundle documentation can be found here - https://github.com/gmarik/Vundle.vim
 
+To initialize the plugins already configured run the following from the command line
+
+    vim +BundleInstall
+
 ### Command-T
 
 command-t requires ruby be installed on your system and that vim was compiled with ruby support. You can verify that ruby is installed with
