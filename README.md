@@ -24,12 +24,7 @@ Create a localized tmp directory for storing backup, swap, and undo files. This 
 
 ## Plugins
 
-Pathogen is already setup by default with this config once you update the git submodules. If you wish to setup any plugins not included the easiest way to do so is to add the git repo for the plugin as a submodule within this git repo
-
-    git submodule add <git-clone-url>
-    git submodule init && git submodule update
-
-and then do any needed configurations in ~/.vim/vimrc
+Plugins are handles by Vundle. This plugin is installed with the initial git submodules init && git submodules update. After that all plugins can be installed by updating the .vimrc file. Vundle documentation can be found here - https://github.com/gmarik/Vundle.vim
 
 ### Command-T
 
